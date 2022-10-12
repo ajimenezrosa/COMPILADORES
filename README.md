@@ -4,7 +4,7 @@
 ## **Definición de compilador**
 #### Un compilador es un tipo especial de traductor en el que el lenguaje fuente es un
 #### lenguaje de alto nivel y el lenguaje objeto es de bajo nivel (figura 1.1). 
- ![](img\fig1.1.png)
+ ![](img/fig1.1.png)
 #
 
 #### Un traductor es un programa que convierte el texto escrito en un lenguaje en texto
