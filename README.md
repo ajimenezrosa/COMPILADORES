@@ -9,7 +9,7 @@
 
 #### Un traductor es un programa que convierte el texto escrito en un lenguaje en texto
 #### escrito en otro lenguaje (figura 1.2).
- ![](img\fig1.2.png)
+ ![](img/fig1.2.png)
 
 
 
@@ -35,7 +35,7 @@
 ###### Las fases del proceso de compilación son las siguientes (figura 1.3):
  
 
-![](img\fig1.3.png)
+![](img/fig1.3.png)
 
 
 
@@ -52,7 +52,7 @@
 
 #### Su principal función consiste en leer los caracteres de entrada y elaborar como salida una secuencia de componentes léxicos que utiliza el analizador sintáctico para hacer el análisis. En la figura 1 se puede apreciar el esquema de una interacción que se aplica convirtiendo el analizador léxico en una subrutina o corrutina del analizador sintáctico. Recibida la orden "obtener el siguiente componente léxico" del analizador sintáctico, el analizador léxico lee los caracteres de entrada hasta que pueda identificar el siguiente componente léxico.
 #
-![](img\fig1.32.png)
+![](img/fig1.32.png)
  #
 
 
@@ -100,7 +100,7 @@
 - Hacer las funciones de preprocesador. 
  
 
-![](img\fig1.2.1.png)
+![](img/fig1.2.1.png)
 
 #
 
@@ -112,7 +112,7 @@
 #
 #### Aparte de esta función principal, el párser es la unidad que guía todo el proceso, o casi todo, de la compilación. Esto es así porque por un lado va solicitando al léxer los tokens y al mismo tiempo va dirigiendo el proceso de análisis semántico y generación de código intermedio. Por lo que muchas veces se le llama al proceso de análisis semántico y generación de código intermedio, traducción dirigida por la sintaxis
  
-![](img\fig3.1.png)
+![](img/fig3.1.png)
 # 
 #### Generalmente, los analizadores sintácticos obtienen un árbol teórico que permite expresar el orden de los lexemas según van apareciendo. Ese árbol debe ser el modelo de donde salga el análisis semántico. Pero lo normal es que si utilizamos el método de la traducción dirigida por la sintaxis no lleguemos ni siquiera a plantearnos la generación del árbol ya que el párser realizará las acciones semánticas e incorporará los métodos para realizar la generación de código intermedio y avisará de errores y su recuperación.
 #
