@@ -1,7 +1,25 @@
 # COMPILADORES
 
 
-## **Definición de compilador**
+## [Definición de compilador](#definicion)
+## [Análisis Léxico](#anali_lexico)
+## [Análisis sintáctico](#nali-sintactivo)
+
+
+
+## [Analizadores sintácticos predictivos](#anali_sinPre)
+## [Analizadores sintácticos descendentes recursivos](#Asint)
+## [(ASDR)](#Asint)
+
+
+## [ Video Compiladores](#VidoesComp)
+
+
+
+
+
+
+## **Definición de compilador**<a name="definicion"></a>
 #### Un compilador es un tipo especial de traductor en el que el lenguaje fuente es un
 #### lenguaje de alto nivel y el lenguaje objeto es de bajo nivel (figura 1.1). 
  ![](img/fig1.1.png)
@@ -39,7 +57,7 @@
 
 
 
-## **Análisis Léxico**
+## **Análisis Léxico**<a name="anali_lexico"></a>
 ### Marco Teórico
 
 #### El Análisis Léxico es la primera fase de un compilador y consiste en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. Estos tokens sirven para una posterior etapa del proceso de traducción, siendo la entrada para el Análisis Sintáctico.
@@ -56,7 +74,7 @@
  #
 
 
-## **Análisis sintáctico**
+## **Análisis sintáctico**<a name="Anali-sintactivo"></a>
 #### El analizador léxico tiene como entrada el código fuente en forma de una sucesión de caracteres. El analizador sintáctico tiene como entrada los lexemas que le suministra el analizador léxico y su función es comprobar que están ordenados de forma correcta (dependiendo del lenguaje que queramos procesar). Los dos analizadores suelen trabajar unidos e incluso el léxico suele ser una subrutina del sintáctico. Al analizador sintáctico se le suele llamar párser. El párser genera de manera teórica un árbol sintáctico. Este árbol se puede ver como una estructura jerárquica que para su construcción utiliza reglas recursivas. La estructuración de este árbol hace posible diferenciar entre aplicar unos operadores antes de otros en la evaluación de expresiones. Es decir, si tenemos esta expresión en Java:
 
 
@@ -140,7 +158,7 @@
 #### El método de ASD intenta encontrar en el árbol universal la sentencia a reconocer en cada momento. Pero es posible que esta búsqueda en profundidad se haga interminable porque haya ramas infinitas. Para evitar este inconveniente, se debe establecer un criterio para terminar la búsqueda por esa rama y establecerla por otra.
 #
 
-## **Analizadores sintácticos predictivos**
+## **Analizadores sintácticos predictivos**<a name="anali_sinPre">
 
 #
 #### Hemos visto que los analizadores sintácticos con retroceso son ineficientes. Pero hay maneras de aumentar la eficiencia. Una de ellas es siendo capaces  de saber qué regla aplicar del conjunto de reglas aplicables en cada caso. Es decir, si tenemos un token y una serie de reglas a aplicar, debemos poder elegir una de ellas mirando si el primer token coincide con el que tenemos seleccionado.
@@ -153,7 +171,7 @@
 #
 
 ## **Analizadores sintácticos descendentes recursivos**
-## **(ASDR)**
+## **(ASDR)**<a name="Asint"></a>
 #
 #### Son un tipo especial de ASDP y por tanto sólo pueden analizar gramáticas LL(1).
 #### Se trata de implementar tantas funciones recursivas como no terminales de la gramática.
@@ -175,3 +193,13 @@ implementación admita la recursión.
 #### La tabla consta de filas, una por cada no terminal de la gramática, y columnas, una por cada terminal de la gramática y el símbolo de fin de fichero ($). Para llenar las diferentes celdas, primero calcularemos los conjuntos de predicción de todas las reglas.
 #
 #### Para cada fila de la tabla buscaremos todas las reglas en las que el no terminal de la fila aparezca a la izquierda de la regla. Le llamaremos a este conjunto de reglas, reglas de fila. Tomamos cada regla del conjunto de reglas de fila y para cada uno de los elementos de su conjunto de predicción, ponemos la regla en la columna del terminal de su  conjunto de predicción (y en la fila de su conjunto de reglas de fila). En las celdas que se queden vacías pondremos una señal para indicar que hay un error sintáctico (por ejemplo, la palabra error).
+#
+
+## Video Compiladores<a name="VidoesComp"></a>
+[COMPILADORES | Concepto - Historia - Evolución](https://www.youtube.com/watch?v=TnsebcR_dTg)
+#
+[Análisis Sintáctico - Compiladores](https://www.youtube.com/watch?v=NfMtIbs7Nzc)
+#
+
+[Fases del compilador Análisis léxico, sintáctico y semántico](https://www.youtube.com/watch?v=7sAU-7z0X1E)
+#
