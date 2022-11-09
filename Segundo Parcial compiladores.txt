@@ -1,0 +1,95 @@
+1 Su principal función consiste en leer los caracteres de entrada y elaborar como salida una secuencia de componentes léxicos que utiliza el analizador sintáctico para hacer el análisis
+
+
+Analizador Léxico **
+Analizador Sintactico
+
+
+2 La función principal es comprobar que los tokens que le suministra el analizador léxico (AL o léxer) van ordenados según la especificación de la gramática del lenguaje a compilar.
+Analizador Léxico 
+Analizador Sintactico **
+
+
+
+3 consiste en ir haciendo derivaciones a la izquierda, partiendo del axioma inicial, hasta obtener la secuencia de derivaciones que reconoce a la sentencia.
+
+Analizador Léxico 
+Analizador Sintactico
+Analizador  sintáctico descendente (ASD)  **
+Analizador sintácticos predictivos
+
+4 herramientas generan automáticamente analizadores léxicos
+
+Generadores de analizadores léxicos **
+Generadores de analizadores sintácticos
+
+5  generadores producen analizadores sintácticos, normalmente a partir de una entrada fundamentada en una gramática independiente del contexto
+Generadores de analizadores léxicos 
+Generadores de analizadores sintácticos **
+
+6 Genera un código ejecutable en un ordenador distinto de aquel en que se realiza la compilación.
+
+Compilador cruzado. **
+Compilador de montaje y ejecución.
+Compilador en una pasada.
+
+
+7 Se fragmenta el programa fuente en módulos que se compilan por separado, y una vez compilados se unen mediante un enlazador para formar un módulo ejecutable.
+
+Compilador cruzado. 
+Compilador de montaje y ejecución. **
+Compilador en una pasada.
+
+8 Examina el código fuente una sola vez, generando el código objeto.
+
+Compilador cruzado. 
+Compilador de montaje y ejecución. 
+Compilador en una pasada. **
+
+9 Requiere varias lecturas del programa fuente para producir y optimizar el código objeto.
+
+Compilador de pasadas múltiples **
+Compilador de optimización
+Compilador incremental.
+
+10 Lee el código fuente, lo analiza, optimiza y descubre errores potenciales sin ejecutar el programa.
+
+Compilador de pasadas múltiples 
+Compilador de optimización **
+Compilador incremental.
+
+11 Compila el programa fuente, en caso de detectar errores al volver a compilar el programa corregido, solo compila las modificaciones que se han hecho respecto al primero.
+
+Compilador de pasadas múltiples 
+Compilador de optimización 
+Compilador incremental. **
+
+
+12 El lenguaje fuente es el lenguaje ensamblador.
+
+Ensamblador. **
+Autocompilador.
+Metacompilador. 
+
+13  Es el compilador que está escrito en el mismo lenguaje a compilar, básicamente nos sirve para hacer ampliaciones al lenguaje, mejorar el código generado, etc.
+
+
+Ensamblador. 
+Autocompilador. **
+Metacompilador. 
+
+14 “Compilador de compiladores”. Obtiene como entrada la definición de un lenguaje y como salida el compilador para dicho lenguaje.
+
+Ensamblador. 
+Autocompilador. 
+Metacompilador. ** 
+
+
+15 Exiten compiladores de C en línea para ejecutar código en el navegador
+
+Verdadero **
+falso
+
+
+
+

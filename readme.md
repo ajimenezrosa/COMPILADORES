@@ -30,6 +30,9 @@
 ###  [  - Techiedelight](#Techiedelight)
 ###  [  - Conclusión](#Conclusión)
 
+#
+### ¿En qué se diferencia de un Intérprete?(#diferencias)
+
 
 #
 
@@ -392,5 +395,26 @@ implementación admita la recursión.
 #
 
 # Practica para entregar el Martes 1 de Noviembre 2022**
+
+#
+
+
+# ¿En qué se diferencia de un Intérprete?<a name="diferencias"></a>
+
+#### Para responder a esta pregunta primero debemos conocer que es y para qué sirve un Intérprete.
+#
+#### Un intérprete lee un programa fuente ejecutable, escrito en un lenguaje de programación de alto nivel, así como datos para este programa, y ​​ejecuta el programa contra los datos para producir algunos resultados. Un ejemplo es el intérprete de shell de Unix, que ejecuta comandos del sistema operativo de forma interactiva.
+#
+#### Hay que tener en cuenta que tanto los intérpretes como los compiladores (como cualquier otro programa) están escritos en un lenguaje de programación de alto nivel (que puede ser diferente del idioma que aceptan) y se traducen en código máquina.
+#
+#### Por ejemplo, un intérprete de Java puede escribirse completamente en C o incluso en Java. El programa fuente del intérprete es independiente de la máquina ya que no genera código de máquina.
+#
+#### Un intérprete generalmente es más lento que un compilador porque procesa e interpreta cada enunciado de un programa tantas veces como el número de evaluaciones de esta afirmación. Por ejemplo, cuando se interpreta un bucle for, las afirmaciones dentro del cuerpo for-loop se analizarán y evaluarán en cada paso del bucle. Algunos lenguajes, como Java y Lisp, vienen con un intérprete y un compilador. Los programas fuente de Java (clases Java con extensión .java) son traducidos por el compilador javac en archivos de códigos de bytes (con extensión .class).
+#
+#### El intérprete de Java, llamado Java Virtual Machine (JVM), en realidad puede interpretar códigos de bytes directamente o puede compilarlos internamente en código máquina y luego ejecutar ese código.
+#
+#### Los compiladores son procesos complejos debido a que tienen varias fases por las que un programa fuente debe de pasar antes de convertirse en un programa ejecutable, los pasos son los siguiente
+#
+
 
 
