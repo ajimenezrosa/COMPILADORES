@@ -29,6 +29,15 @@
 ###  [  - Code on Mobile](#Mobile)
 ###  [  - Techiedelight](#Techiedelight)
 ###  [  - Conclusión](#Conclusión)
+### [¿Qué es un compilador?](#¿Quéesuncompilador?)
+
+### [Compilador e intérprete: definición y diferencias](#compinterprete)
+### [¿Qué es un intérprete?](#QueesunInterprete)
+### [Compilador e intérprete: diferencias, en resumen](#diferenciasComInt)
+### [Solución híbrida de intérprete y compilador: compilación en tiempo de ejecución](#SolucionHibridaComTra)
+
+### [Ver Link Relacionados](#LinkRelacionados2)
+
 
 #
 ### ¿En qué se diferencia de un Intérprete?(#diferencias)
@@ -417,4 +426,64 @@ implementación admita la recursión.
 #
 
 
+# Compilador e intérprete: definición y diferencias<a name="compinterprete"></a>
+
+#### A la hora de elegir un lenguaje de programación, se debe prestar especial atención a dos cosas: por una parte, el lenguaje debe contar con todos los componentes básicos necesarios para el proyecto de software que se quiera desarrollar. Por la otra, tiene que permitir programar e implementar este proyecto de la manera más sencilla posible. La buena legibilidad y simplicidad del código fuente son fundamentales para garantizar lo segundo, porque estas características no solo facilitan el aprendizaje del lenguaje de programación, sino también, obviamente, su posterior utilización en el día a día.
+# 
+#### En primer lugar, para que el ordenador o el procesador puedan comprender las instrucciones que contiene un programa desarrollado previamente, el código fuente escrito en los lenguajes de programación actuales debe convertirse a un formato legible por máquina. De este procedimiento, dependiendo del lenguaje de programación, se encarga un compilador o un intérprete. ¿Qué son exactamente estos dos programas? Y ¿en qué se diferencian?
+
+## ¿Qué es un intérprete?<a name="QueesunInterprete"></a>
+#
+#### Un intérprete es un programa informático que procesa el código fuente de un proyecto de software durante su tiempo de ejecución, es decir, mientras el software se está ejecutando, y actúa como una interfaz entre ese proyecto y el procesador. Un intérprete siempre procesa el código línea por línea, de modo que lee, analiza y prepara cada secuencia de forma consecutiva para el procesador. Este principio también se aplica a las secuencias recurrentes, que se ejecutan de nuevo cada vez que vuelven a aparecer en el código. Para procesar el código fuente del software, el intérprete recurre a sus propias bibliotecas internas: en cuanto una línea de código fuente se ha traducido a los correspondientes comandos legibles por máquina, esta se envía directamente al procesador.
+
+#
+
+#### El proceso de conversión no finaliza hasta que se ha interpretado todo el código. Solo se interrumpe prematuramente si se produce un fallo durante el procesamiento, lo que simplifica mucho la resolución de los errores, ya que la línea de código problemática se detecta inmediatamente después de ocurrir el fallo.
+
+#####  Nota
+    BASIC, Perl, Python, Ruby y PHP son algunos de los lenguajes de programación más famosos que dependen de un intérprete para ser traducidos de código fuente a código máquina. Por ello, también suelen llamarse lenguajes interpretados.
+
+
+## ¿Qué es un compilador?<a name="¿Quéesuncompilador?">
+
+#### Un compilador es un programa informático que traduce todo el código fuente de un proyecto de software a código máquina antes de ejecutarlo. Solo entonces el procesador ejecuta el software, obteniendo todas las instrucciones en código máquina antes de comenzar. De esta manera, el procesador cuenta con todos los componentes necesarios para ejecutar el software, procesar las entradas y generar los resultados. No obstante, en muchos casos, durante el proceso de compilación tiene lugar un paso intermedio fundamental: antes de generar la traducción final en código máquina, la mayoría de los compiladores suelen convertir el código fuente en un código intermedio (también llamado código objeto) que, a menudo, es compatible con diversas plataformas y que, además, también puede ser utilizado por un intérprete.
+#
+#### Al producir el código, el compilador determina qué instrucciones van a enviarse al procesador y en qué orden. Si las instrucciones no son interdependientes, incluso es posible que puedan procesarse en paralelo.
+#
+#####  Nota
+    Entre los lenguajes compilados puros se incluyen, entre otros, los veteranos C, C++ y Pascal.
+
+
+## Compilador e intérprete: diferencias, en resumen<a name="diferenciasComInt"></a>
+#
+#### Tanto los compiladores como los intérpretes cumplen la función de convertir el código de software que se ha escrito a un formato ejecutable y legible por máquina. Sin esta traducción, los procesadores informáticos no podrían ejecutar el software en lenguajes como C, C++, PHP, Python o Ruby, lo que convierte estos programas en unos componentes imprescindibles para utilizar ordenadores, portátiles o smartphones. En los apartados anteriores, hemos visto que compiladores e intérpretes presentan algunas diferencias básicas, algo que debe tenerse especialmente en cuenta a la hora de elegir un lenguaje de programación adecuado para desarrollar un nuevo software. En la siguiente tabla, se resumen los aspectos clave que caracterizan intérpretes y compiladores:
+# 
+| 	            |Intérprete	 |Compilador |
+|---------------|------------|-----------|
+| Momento en que se traduce el código fuente |Durante el tiempo de ejecución del software|Antes de ejecutar el software|
+|Procedimiento de traducción|Línea por línea|Siempre todo el código|
+|Presentación de errores de código|Después de cada línea|	En conjunto, después de toda la compilación|
+|Velocidad de traducción|Alta|Baja|
+|Eficiencia de traducción|	Baja|	Alta|
+|Coste de desarrollo|Bajo|Alto|
+|Lenguajes típicos|	PHP, Perl, Python, Ruby, BASIC|C, C++, Pascal|
+#
+#### Si observamos las diferencias entre compilador e intérprete, vemos claramente los puntos fuertes y débiles de cada solución para traducir el código fuente: con el intérprete, los programas se pueden ejecutar de inmediato y, por lo tanto, se inician mucho más rápido. Además, el desarrollo es mucho más fácil que con un compilador, porque el proceso de depuración (es decir, la corrección de errores) se lleva a cabo igual que la traducción, línea por línea. En el caso del compilador, primero debe traducirse todo el código antes de poder resolver los errores o iniciar la aplicación. Sin embargo, una vez que se ejecuta el programa, los servicios del compilador ya no son necesarios, mientras que el intérprete continúa utilizando los recursos informáticos.
+#
+|                     |Ventaja   |Inconveniente|
+|---------------------|----------|-------------|
+|Intérprete|Proceso de desarrollo sencillo (sobre todo en términos de depuración)|Proceso de traducción poco eficiente y velocidad de ejecución lenta|
+|Compilador|Proporciona al procesador el código máquina completo y listo para ejecutar|Cualquier modificación del código (resolución de errores, desarrollo del software, etc.) requiere volverlo a traducir|
+
+#
+## Solución híbrida de intérprete y compilador: compilación en tiempo de ejecución<a name="SolucionHibridaComTra"></a>
+#
+#### Para compensar los puntos débiles de ambas soluciones, también existe el llamado modelo de compilación en tiempo de ejecución (en inglés, just-in-time-compiler, o “compilador justo a tiempo”). Este tipo de compilador, que a veces también se conoce por el término inglés compreter (acrónimo de compiler e interpreter), rompe con el modelo habitual de compilación y traduce el código del programa durante el tiempo de ejecución, al igual que el intérprete. De esta forma, la alta velocidad de ejecución típica de los compiladores se complementa con la simplificación del proceso de desarrollo.
+#
+
+## Ver Link Relacionados<a name="LinkRelacionados2"></a>
+[AOT vs JIT compilation in Java](https://youtu.be/sJVenujWGjs)
+#
+[Lenguajes compilados o lenguajes interpretados ¿Cuál es la diferencia?](https://youtu.be/ojqusTBq4A0)
+#
 
